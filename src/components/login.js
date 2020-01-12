@@ -13,15 +13,13 @@ export default class Login extends Component {
   }
   handleInput(event) {
     event.preventDefault();
-    const user = {
-      username: this.state.username,
-      password: this.state.password
-    };
-    Axios.post(
-      "http://localhost:3001/login",
-      { user },
-      { withCredentials: false }
-    )
+    const { username, password } = this.state;
+    const dataForm = new FormData();
+    dataForm.append("username", this.state.username);
+    dataForm.append("password", this.state.password);
+    Axios.post("http://localhost:3001/login", dataForm, {
+      withCredentials: false
+    })
       .then(response => {
         console.log("res ", response);
       })
