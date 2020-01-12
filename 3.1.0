@@ -1,0 +1,9 @@
+
+> fibers@4.0.2 install F:\work\reactspa\node_modules\fibers
+> node build.js || nodejs build.js
+
+`win32-x64-64` exists; testing
+Binary is fine; exiting
++ @babel/core@7.0.0
++ fibers@4.0.2
+added 8 packages from 43 contributors in 8.916s

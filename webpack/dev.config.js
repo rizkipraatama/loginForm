@@ -15,7 +15,7 @@ module.exports = webpackMerge(webpackCommon, {
   devtool: 'inline-source-map',
   mode: 'development',
   output: {
-  
+
     path: path.resolve(__dirname, '../static/dist'),
 
     filename: '[name].js',
@@ -46,9 +46,7 @@ module.exports = webpackMerge(webpackCommon, {
           {
             loader: 'sass-loader',
             options: {
-              outputStyle: 'expanded',
-              sourceMap: true,
-              sourceMapContents: true
+              sourceMap: true
             }
           }
         ]
