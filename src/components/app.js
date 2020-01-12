@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Dashboard from "./Dashboard";
-import {} from "module";
+import Home from "./admin/Home";
 export default class App extends Component {
   constructor() {
     super();
